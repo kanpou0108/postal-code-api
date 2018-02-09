@@ -1,0 +1,24 @@
+
+machine:
+  node:
+    version: 9.5.0
+  yarn:
+    version: 1.3.2
+
+dependencies:
+  override:
+    - yarn
+    - sudo pip install awscli
+
+test:
+  override:
+    - echo "No test at all"
+
+deployment:
+  pre:
+    - yarn run build
+  staging:
+    branch: master
+    commands:
+      - aws s3 sync ./api s3://postal-code-api --delete
+      - aws cloudfront create-invalidation --distribution-id E2DUSRQH2EPRYH --paths "/*"
