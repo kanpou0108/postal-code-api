@@ -17,6 +17,7 @@ test:
 deployment:
   pre:
     - yarn run build
+    - cp example/index.html api/index.html
   staging:
     branch: master
     commands:

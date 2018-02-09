@@ -1,6 +1,6 @@
 # 郵便番号 API
 
-[![Build Status](https://travis-ci.org/madefor/postal-code-api.svg?branch=master)](https://travis-ci.org/madefor/postal-code-api)
+[![CircleCI](https://circleci.com/gh/QuoineFinancial/postal-code-api/tree/master.svg?style=svg)](https://circleci.com/gh/QuoineFinancial/postal-code-api/tree/master)
 
 この郵便番号APIはGitHubページを使用して静的なファイルで配信しているため信頼性が高く、さらにオープンソースなのでクライアントワークでも安心して使用できます。
 
@@ -9,19 +9,19 @@
 なお、このAPIはAWSのLambdaを使用して毎日更新しています。
 
 ## デモ
-https://madefor.github.io/postal-code-api/
+https://postal.quoine.io/
 
 ## エンドポイント
 
 ```
-https://madefor.github.io/postal-code-api/api/v1/
+https://postal.quoine.io/v1/
 ```
 
 ## 使い方
 
 郵便番号が`100-0014`(東京都千代田区永田町)の住所を取得したい場合。
 
-https://madefor.github.io/postal-code-api/api/v1/100/0014.json
+https://postal.quoine.io/v1/100/0014.json
 
 ```json
 {
@@ -50,7 +50,7 @@ https://madefor.github.io/postal-code-api/api/v1/100/0014.json
 
 1つの郵便番号に複数の住所がある場合は以下のような感じです。
 
-https://madefor.github.io/postal-code-api/api/v1/618/0000.json
+https://postal.quoine.io/v1/618/0000.json
 
 ```json
 {
@@ -96,7 +96,7 @@ https://madefor.github.io/postal-code-api/api/v1/618/0000.json
 
 大口事業所個別番号では英語の住所は空になっています。
 
-https://madefor.github.io/postal-code-api/api/v1/100/8798.json
+https://postal.quoine.io/v1/100/8798.json
 
 ```json
 {
