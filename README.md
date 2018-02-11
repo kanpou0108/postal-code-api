@@ -1,6 +1,6 @@
 # 郵便番号 API
 
-[![CircleCI](https://circleci.com/gh/QuoineFinancial/postal-code-api/tree/master.svg?style=svg)](https://circleci.com/gh/QuoineFinancial/postal-code-api/tree/master)
+[![CircleCI](https://circleci.com/gh/kanpou0108/postal-code-api/tree/master.svg?style=svg)](https://circleci.com/gh/kanpou0108/postal-code-api/tree/master)
 
 この郵便番号APIはGitHubページを使用して静的なファイルで配信しているため信頼性が高く、さらにオープンソースなのでクライアントワークでも安心して使用できます。
 
