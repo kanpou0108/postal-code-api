@@ -21,5 +21,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - aws s3 sync ./api s3://postal-code-api --delete
-      - aws cloudfront create-invalidation --distribution-id E2DUSRQH2EPRYH --paths "/*"
+      - aws s3 sync ./api s3://postal-code-api-kanpou0108 --delete
